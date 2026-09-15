@@ -22,8 +22,10 @@ The main objectives of this project are to:
 Database Structure:
 The database currently consists of the following entities:
 
+
 Patients:
   Stores information about patients registered with the clinic. Column data includes. 
+    
     1. patient_id -	Unique identifier for each patient
     2. full_name	
     3. birth_date
@@ -32,12 +34,14 @@ Patients:
 
 Doctors:
   Stores information about doctors working at the clinic. Table	data includes. 
+    
     1. doctor_id	- 	Unique identifier for each doctor
     2. name
     3. specialization
 
 Appointments:
   Stores appointments between patients and doctors. Table data includes.
+    
     1. appointment_id	-	 Unique identifier for each appointment
     2. doctor_id	-	Doctor associated with the appointment
     3. patient_id	-	Patient associated with the appointment
@@ -50,6 +54,7 @@ Appointments:
 
 Prescriptions:
   Stores prescription information associated with appointments. Table data includes 
+    
     1. prescription_id	INT	Unique identifier for each prescription
     2. appointment_id	INT	Appointment associated with the prescription
     3. instruction	TEXT	Instructions for taking the medication
@@ -57,8 +62,12 @@ Prescriptions:
 
     
 ENTITY RELATIONSHIPS
+
 The database follows a relational structure in which:
     A patient can have multiple appointments.
     A doctor can have multiple appointments.
     Each appointment belongs to one patient and one doctor.
     An appointment can result in one or more prescriptions.
+
+  
+
